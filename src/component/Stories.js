@@ -55,7 +55,10 @@ class Stories extends Component {
                   {/* {title} */}
                   </CardLink>
               <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-              <CardLink href={item.url} style={{color:'grey' , fontSize:'13px'}}>({url})</CardLink>
+              <CardLink href={item.url} style={{color:'grey' , fontSize:'13px'}}>
+                  {/* ({url}) */}
+                  <span dangerouslySetInnerHTML={{ __html: title }} />
+                  </CardLink>
               {/* <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>  */}
               
               </CardTitle >
